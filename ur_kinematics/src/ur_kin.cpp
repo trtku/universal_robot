@@ -13,6 +13,16 @@ namespace ur_kinematics {
     }
     const double PI = M_PI;
 
+    //#define UR20_PARAMS
+    #ifdef UR20_PARAMS
+    const double d1 =  0.2363;
+    const double a2 = -0.862;
+    const double a3 = -0.7287;
+    const double d4 =  0.1578;
+    const double d5 =  0.1593;
+    const double d6 =  0.1543;
+    #endif
+
     //#define UR10_PARAMS
     #ifdef UR10_PARAMS
     const double d1 =  0.1273;
